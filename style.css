@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    position: relative;
+}
+
+.road {
+    position: absolute;
+    background: #333;
+}
+
+.horizontal-road {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transform: translateY(-50%);
+}
+
+.vertical-road {
+    left: 50%;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.traffic-light {
+    width: 30px;
+    height: 90px;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    border-radius: 6px;
+}
+
+.horizontal-light {
+    top: 5px;
+    left: 20px;
+}
+
+.vertical-light {
+    top: -20px;
+    left: 35px;
+    transform: rotate(90deg);
+}
+
+.light {
+    width: 20px;
+    height: 20px;
+    background: gray;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.redColor {
+    background-color: red;
+}
+
+.orangeColor {
+    background-color: orange;
+}
+
+.greenColor {
+    background-color: green;
+}
+
+.car {
+    position: absolute;
+    width: 90px;
+    height: auto;
+}
+
+.horizontal-car {
+    top: 5%;
+    left: 70px;
+    transform: rotate(270deg);
+}
+
+.vertical-car {
+    left: 3%;
+    bottom: 40px;
+    transform: rotate(180deg);
+}
